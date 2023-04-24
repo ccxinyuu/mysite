@@ -1,6 +1,7 @@
 {% extends "base_bootstrap.html" %}
 
 {% block content %}
+<meta name="dj4e" content="85f36986fcf19e99df36ca4800f95e06"> 
   <h1>Auto List</h1>
   {% if auto_list %}
   <ul>
@@ -24,7 +25,7 @@
     {% endif %}
   </p>
   <p>
-  <a href="{% url 'autos:make_list' %}">View makes</a> ({{ make_count }}) | 
+  <a href="{% url 'autos:make_list' %}">View makes</a> ({{ make_count }}) |
     <a href="{% url 'autos:make_create' %}">Add a make</a>
   </p>
 {% endblock %}
